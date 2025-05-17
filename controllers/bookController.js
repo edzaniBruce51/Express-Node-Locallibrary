@@ -1,6 +1,7 @@
 const Book = require("../models/book");
 const asyncHandler = require("express-async-handler");
 
+// additionally has an index() function for displaying the site welcome page:
 exports.index = asyncHandler(async (req, res, next) => {
   res.send("NOT IMPLEMENTED: Site Home Page");
 });
