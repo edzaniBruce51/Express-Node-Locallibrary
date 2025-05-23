@@ -30,7 +30,7 @@ This project is a web application that allows users to manage a local library's 
 
 To start the application in development mode:
 ```
-npm run dev
+npm run serverstart
 ```
 
 To start the application in production mode:
