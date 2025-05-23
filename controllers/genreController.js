@@ -113,7 +113,7 @@ exports.genre_delete_post = asyncHandler(async (req, res, next) => {
     Book.find({ genre: req.params.id }, "title summary").exec(),
   ]);
 
-  if (allBooksByAuthor.length > 0) {
+  if (allBooksByGenre.length > 0) {
     // Genre has books. Render in same way as for GET route.
     res.render("genre_delete", {
       title: "Delete Genre",
